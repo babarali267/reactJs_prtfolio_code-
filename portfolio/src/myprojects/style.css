@@ -1,0 +1,61 @@
+
+
+.porfolio_section h3{
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+}
+
+
+.porfolio_section .myprojects {
+    display: flex;
+    gap: 5rem;
+}
+
+.porfolio_section .myprojects .project_pic {
+    height: 200px;
+    width: 100%;
+    border: 1px solid#fff;
+}
+
+.porfolio_section .myprojects .project_pic img{
+    height: 100%;
+    width: 100%;
+}
+
+.porfolio_section .myprojects  h4{
+    font-size: 2.2rem;
+    padding: 1rem 0;
+}
+.porfolio_section .myprojects  p{
+    font-size: 1.4rem;
+}
+
+.porfolio_section .myprojects a {
+     padding: 1rem 3rem;
+     background: var(--blue-clr);
+     color: var(--white-clr);
+     margin: 2rem 0;
+     display: inline-block;
+     border-radius: 1rem;
+     cursor: pointer;
+     transition: 0.2s ease-in;
+    border: 1px solid var(--blue-clr);
+
+}
+.porfolio_section .myprojects a:hover{
+    background: transparent;
+    border: 1px solid var(--blue-clr);
+    color: var(--blue-clr);
+}
+
+/* responsive portfolio section */
+
+
+@media screen and (max-width:768px) {
+    .porfolio_section .myprojects {
+        flex-direction: column;
+        grid-area: 20px;
+    }
+    
+
+}

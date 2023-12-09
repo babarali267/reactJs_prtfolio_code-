@@ -1,0 +1,106 @@
+
+.contact_section{
+    width: 100%;
+    padding: 4rem 0;
+}
+.contact_section h3{
+    font-size: 3.2rem;
+}
+.contact_section .contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact_section .contact .form{
+    flex: 50%;
+}
+.contact_section .contact .form input 
+,.contact_section .contact .form textarea{
+    display: inline-block;
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem ;
+    border: 1px solid var(--blue-clr);
+}
+
+.contact_section .contact .form input:nth-child(1){
+    width: 47%;
+}
+.contact_section .contact .form input:nth-child(2){
+    width: 47%;
+     margin-left: 3rem;
+}
+
+/* .contact_section .contact .details{ */
+
+.contact_section .contact .details{
+    flex: 50%;
+    color: #fff;
+    padding: 0 3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact_section .contact .details .info {
+    margin: 1rem 0;
+    font-size: 1.6rem;
+}
+
+.contact_section .contact .details .info .icon {
+    display: inline-block;
+    padding: 0rem 1rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out ;
+}
+.contact_section .contact .details .info .icon:hover{
+    color: var(--blue-clr);
+}
+
+
+.contact_section .contact  button{
+    padding: 1rem 3rem;
+     background: var(--blue-clr);
+     border: 1px solid var(--blue-clr);
+     color: #fff;
+     font-size: 1.5rem;
+     cursor: pointer;
+     transition: 0.3s ease-in;
+}
+.contact_section .contact  button:hover{
+    background: transparent;
+    color: var(--blue-clr);
+}
+
+footer{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+
+/* responsive desgin */
+
+@media screen and (max-width:768px) {
+    .contact_section .contact {
+        flex-direction: column;
+    }
+
+    .contact_section .contact .form input:nth-child(1){
+        width:100%;
+    }
+    .contact_section .contact .form input:nth-child(2){
+        width:100%;
+        margin-left: 0rem;
+
+    }
+
+    
+    .contact_section .contact .details{
+        margin-top: 1rem;
+        justify-content: flex-end;
+        padding: 0 1rem;
+
+    }
+
+}

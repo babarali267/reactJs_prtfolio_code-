@@ -1,0 +1,168 @@
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+
+.navbar nav ul{
+    display: flex;
+    gap: 20px;
+}
+
+.navbar nav ul li a{
+    color: var(--white-clr);
+    transition: 0.5s ease-in-out;
+}
+.navbar nav ul li a:hover{
+    color: var(--blue-clr);
+}
+
+/* toggleBtn */
+
+.toggleBtn{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    background: var(--white-clr);
+    font-size: 2rem;
+    z-index: 1000;
+    right: 0;
+    top: 1rem;
+    color: var(--blue-clr);
+    transition: 0.4s ease-in;
+    display: none;
+}
+.toggleBtn:hover{
+    background: var(--blue-clr);
+    color: var(--white-clr);
+}
+
+.active{
+    display: block !important;
+   animation: ani 1s ease-in forwards;
+}
+
+@keyframes ani {
+    0%{
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translateX(10px);
+    }
+}
+
+
+/*  */
+header {
+    height: 90vh;
+    width: 100%;
+
+}
+
+header .hero{
+    display: flex;
+    position: relative;
+
+}
+
+header .hero .img{
+    flex: 50%;
+}
+header .hero .img img{
+    width: 100%;
+    height: 90vh;
+}
+ 
+header .hero .text{
+    flex: 50%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 0 2rem;
+}
+
+header .hero .text h2{
+    font-size: 3.2rem;
+
+}
+header .hero .text p{
+    padding: 1rem 0;
+}
+
+
+header  .social_icons {
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translate(-50%,-50%);
+
+}
+header  .social_icons ul li {
+    margin: 1rem 0;
+}
+
+header  .social_icons a{
+    color: var(--white-clr);
+    transition: 0.5s ease-in;
+}
+header  .social_icons a:hover{
+    color: var(--blue-clr);
+}
+
+
+
+
+@media screen and (max-width:768px) {
+     .navbar {
+        flex-direction: column;
+        
+     }
+      .navbar nav{
+        display: none;
+      }
+      .navbar ul {
+        flex-direction: column;
+        margin: 1rem 0;
+      }
+
+          /* toggleBtn */
+          .toggleBtn{
+            display: block;
+          }
+
+          header .hero .img img{
+            height: 60vh;
+          }
+
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+      header .hero .text{
+        align-items: center;
+        padding: 3rem 0;
+      }
+
+      header .hero .text p{
+        text-align: center;
+      }
+      header  .social_icons {
+        background: var(--blue-clr);
+        padding: 2rem;
+        position: fixed;
+        right: 0;
+        
+      }
+      header  .social_icons ul li {
+        margin: 2rem 0;
+      }
+       
+
+
+}
